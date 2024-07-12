@@ -6,6 +6,7 @@ import { UserContext } from '../Context/Context'
 const Filter = () => {
     const {products} = useContext(UserContext)
     const productCategory = products.map(product=>{return product.category})
+
     const categories = productCategory.filter((category,index)=>productCategory.indexOf(category) === index)
     
   return (

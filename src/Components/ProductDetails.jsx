@@ -22,8 +22,8 @@ function ProductDetails() {
                 <h2 className='text-blue-400 font-medium mt-3'>₹ {product.price}</h2>
                 <p className='font-medium mt-2 line-clamp-4 text-sm text-zinc-700'>Lorem ipsum dolor sit amet consectetur adipisicing elit. At aliquid saepe nesciunt quae. Ipsa quis laborum commodi a, reprehenderit nemo!</p>
                 <div className='flex gap-5 mt-5'>
-                    <button className='border py-1 px-5 rounded-sm border-blue-400 text-blue-400 text-sm font-semibold'>Edit</button>
-                    <button className='border py-1 px-5 rounded-sm border-red-400 text-red-400 text-sm font-semibold'>Delete</button>
+                    <button className='border py-1 px-5 rounded-sm border-blue-400 text-blue-400 text-sm font-semibold'>Add to Cart</button>
+                    <button className='border py-1 px-5 rounded-sm border-red-400 text-red-400 text-sm font-semibold'>Buy</button>
                 </div>
             </div>
         </div>

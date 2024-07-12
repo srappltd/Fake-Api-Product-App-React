@@ -21,15 +21,10 @@ const Deshboard = () => {
         }
     }
     useEffect(()=>{
-        const timeClear = setTimeout(()=>{
-            if(category != 'undefined') getFilterData()
-            if(filterCategories || category == 'undefined') setFilterCategries(products)
-        },1000)
-    return ()=>{
-        clearTimeout(timeClear)
-    }
-    },[products,category])
-
+        if(category != 'undefined') getFilterData()
+        if((filterCategories && category) == 'undefined') setFilterCategries(products)
+    },[products,search])
+console.log(products)
   return (
     <div className='w-full flex md:px-10 px-2'>
         <Filter/>
