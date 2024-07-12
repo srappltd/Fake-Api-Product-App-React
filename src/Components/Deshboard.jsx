@@ -23,8 +23,8 @@ const Deshboard = () => {
         }
     }
     useEffect(()=>{
+        setFilterCategries([])
         if(category != 'undefined') getFilterData()
-            setFilterCategries([])
         if((filterCategories && category) == 'undefined') setFilterCategries(products)
     },[products,search])
   return (
